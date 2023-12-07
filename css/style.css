@@ -29,6 +29,7 @@ h5,
 h6 {
   font-family: "Epilogue", sans-serif;
   color: var(--primary-color);
+  text-transform: uppercase;
 }
 
 .bold-heading {
@@ -262,18 +263,6 @@ h6 {
   align-self: stretch;
 }
 
-.join-newsletter {
-  color: var(--tertiary-color, #46979c);
-}
-
-.join-newsletter h2,
-.join-newsletter h3,
-.join-newsletter h4,
-.join-newsletter h5,
-.join-newsletter h6 {
-  color: var(--tertiary-color, #46979c);
-}
-
 .join-newsletter .cta-button {
   background-color: var(--tertiary-color);
 }
@@ -344,6 +333,72 @@ input {
   align-self: stretch;
 }
 
+.about-leadership {
+  padding-top: 40px;
+}
+
+.about-leadership h1,
+.about-leadership h2,
+.about-leadership h3,
+.about-leadership h4,
+.about-leadership h5,
+.about-leadership h6 {
+  color: var(--secondary-color);
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  align-self: stretch;
+}
+
+.person-title {
+  color: var(--primary-color, #2b3a86);
+  text-transform: capitalize;
+}
+
+.place-title {
+  color: var(--primary-color, #2b3a86);
+  text-transform: capitalize;
+}
+
+.membership {
+  display: flex;
+  padding: 80px 8px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  align-self: stretch;
+}
+
+.membership ul {
+  display: flex;
+  padding: 16px 0px;
+  align-items: center;
+  align-self: stretch;
+}
+.membership li {
+  border-bottom: 5px solid #000;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  flex: 1 0 0;
+}
+
+.join-newsletter {
+  color: var(--tertiary-color, #46979c);
+}
+
+.join-newsletter h2,
+.join-newsletter h3,
+.join-newsletter h4,
+.join-newsletter h5,
+.join-newsletter h6 {
+  color: var(--tertiary-color, #46979c);
+}
+
+/* FOOTER FOOTER FOOTER */
 .footer {
   display: flex;
   padding: 24px 0px 32px 0px;
