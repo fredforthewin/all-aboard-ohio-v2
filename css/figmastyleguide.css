@@ -1,0 +1,245 @@
+:root {
+  --background-color: rgba(250, 251, 252, 1);
+  --on-background-color: rgba(2, 1, 35, 1);
+  --primary-color: rgba(43, 58, 134, 1);
+  --secondary-color: rgba(138, 0, 0, 1);
+  --tertiary-color: rgba(70, 151, 156, 1);
+  --quarternary-color: rgba(175, 145, 100, 1);
+  --on-primary-color: rgba(247, 248, 252, 1);
+  --option: rgba(196, 209, 236, 1);
+  --EPI-heading-h1-REG-font-family: "Epilogue-Regular", Helvetica;
+  --EPI-heading-h1-REG-font-weight: 400;
+  --EPI-heading-h1-REG-font-size: 128px;
+  --EPI-heading-h1-REG-letter-spacing: 0px;
+  --EPI-heading-h1-REG-line-height: normal;
+  --EPI-heading-h1-REG-font-style: normal;
+  --EPI-heading-h1-BOLD-font-family: "Epilogue-Bold", Helvetica;
+  --EPI-heading-h1-BOLD-font-weight: 700;
+  --EPI-heading-h1-BOLD-font-size: 128px;
+  --EPI-heading-h1-BOLD-letter-spacing: 0px;
+  --EPI-heading-h1-BOLD-line-height: normal;
+  --EPI-heading-h1-BOLD-font-style: normal;
+  --EPI-heading-h2-REG-font-family: "Epilogue-Regular", Helvetica;
+  --EPI-heading-h2-REG-font-weight: 400;
+  --EPI-heading-h2-REG-font-size: 96px;
+  --EPI-heading-h2-REG-letter-spacing: 0px;
+  --EPI-heading-h2-REG-line-height: normal;
+  --EPI-heading-h2-REG-font-style: normal;
+  --EPI-heading-h2-BOLD-font-family: "Epilogue-Bold", Helvetica;
+  --EPI-heading-h2-BOLD-font-weight: 700;
+  --EPI-heading-h2-BOLD-font-size: 96px;
+  --EPI-heading-h2-BOLD-letter-spacing: 0px;
+  --EPI-heading-h2-BOLD-line-height: normal;
+  --EPI-heading-h2-BOLD-font-style: normal;
+  --EPI-heading-h3-REG-font-family: "Epilogue-Regular", Helvetica;
+  --EPI-heading-h3-REG-font-weight: 400;
+  --EPI-heading-h3-REG-font-size: 80px;
+  --EPI-heading-h3-REG-letter-spacing: 0px;
+  --EPI-heading-h3-REG-line-height: normal;
+  --EPI-heading-h3-REG-font-style: normal;
+  --EPI-heading-h3-BOLD-font-family: "Epilogue-Bold", Helvetica;
+  --EPI-heading-h3-BOLD-font-weight: 700;
+  --EPI-heading-h3-BOLD-font-size: 80px;
+  --EPI-heading-h3-BOLD-letter-spacing: 0px;
+  --EPI-heading-h3-BOLD-line-height: normal;
+  --EPI-heading-h3-BOLD-font-style: normal;
+  --EPI-heading-h4-REG-font-family: "Epilogue-Regular", Helvetica;
+  --EPI-heading-h4-REG-font-weight: 400;
+  --EPI-heading-h4-REG-font-size: 64px;
+  --EPI-heading-h4-REG-letter-spacing: 0px;
+  --EPI-heading-h4-REG-line-height: normal;
+  --EPI-heading-h4-REG-font-style: normal;
+  --EPI-heading-h4-BOLD-font-family: "Epilogue-Bold", Helvetica;
+  --EPI-heading-h4-BOLD-font-weight: 700;
+  --EPI-heading-h4-BOLD-font-size: 64px;
+  --EPI-heading-h4-BOLD-letter-spacing: 0px;
+  --EPI-heading-h4-BOLD-line-height: normal;
+  --EPI-heading-h4-BOLD-font-style: normal;
+  --EPI-heading-h5-REG-font-family: "Epilogue-Regular", Helvetica;
+  --EPI-heading-h5-REG-font-weight: 400;
+  --EPI-heading-h5-REG-font-size: 48px;
+  --EPI-heading-h5-REG-letter-spacing: 0px;
+  --EPI-heading-h5-REG-line-height: normal;
+  --EPI-heading-h5-REG-font-style: normal;
+  --EPI-heading-h5-BOLD-font-family: "Epilogue-Bold", Helvetica;
+  --EPI-heading-h5-BOLD-font-weight: 700;
+  --EPI-heading-h5-BOLD-font-size: 48px;
+  --EPI-heading-h5-BOLD-letter-spacing: 0px;
+  --EPI-heading-h5-BOLD-line-height: normal;
+  --EPI-heading-h5-BOLD-font-style: normal;
+  --EPI-heading-h6-REG-font-family: "Epilogue-Regular", Helvetica;
+  --EPI-heading-h6-REG-font-weight: 400;
+  --EPI-heading-h6-REG-font-size: 40px;
+  --EPI-heading-h6-REG-letter-spacing: 0px;
+  --EPI-heading-h6-REG-line-height: normal;
+  --EPI-heading-h6-REG-font-style: normal;
+  --EPI-heading-h6-BOLD-font-family: "Epilogue-Bold", Helvetica;
+  --EPI-heading-h6-BOLD-font-weight: 700;
+  --EPI-heading-h6-BOLD-font-size: 40px;
+  --EPI-heading-h6-BOLD-letter-spacing: 0px;
+  --EPI-heading-h6-BOLD-line-height: normal;
+  --EPI-heading-h6-BOLD-font-style: normal;
+  --EPI-heading-h7-REG-font-family: "Epilogue-Regular", Helvetica;
+  --EPI-heading-h7-REG-font-weight: 400;
+  --EPI-heading-h7-REG-font-size: 36px;
+  --EPI-heading-h7-REG-letter-spacing: 0px;
+  --EPI-heading-h7-REG-line-height: normal;
+  --EPI-heading-h7-REG-font-style: normal;
+  --EPI-heading-h7-BOLD-font-family: "Epilogue-Bold", Helvetica;
+  --EPI-heading-h7-BOLD-font-weight: 700;
+  --EPI-heading-h7-BOLD-font-size: 36px;
+  --EPI-heading-h7-BOLD-letter-spacing: 0px;
+  --EPI-heading-h7-BOLD-line-height: normal;
+  --EPI-heading-h7-BOLD-font-style: normal;
+  --EPI-heading-h8-REG-font-family: "Epilogue-Regular", Helvetica;
+  --EPI-heading-h8-REG-font-weight: 400;
+  --EPI-heading-h8-REG-font-size: 32px;
+  --EPI-heading-h8-REG-letter-spacing: 0px;
+  --EPI-heading-h8-REG-line-height: normal;
+  --EPI-heading-h8-REG-font-style: normal;
+  --EPI-heading-h8-BOLD-font-family: "Epilogue-Bold", Helvetica;
+  --EPI-heading-h8-BOLD-font-weight: 700;
+  --EPI-heading-h8-BOLD-font-size: 32px;
+  --EPI-heading-h8-BOLD-letter-spacing: 0px;
+  --EPI-heading-h8-BOLD-line-height: normal;
+  --EPI-heading-h8-BOLD-font-style: normal;
+  --EPI-heading-h9-REG-font-family: "Epilogue-Regular", Helvetica;
+  --EPI-heading-h9-REG-font-weight: 400;
+  --EPI-heading-h9-REG-font-size: 28px;
+  --EPI-heading-h9-REG-letter-spacing: 0px;
+  --EPI-heading-h9-REG-line-height: normal;
+  --EPI-heading-h9-REG-font-style: normal;
+  --EPI-heading-h9-BOLD-font-family: "Epilogue-Bold", Helvetica;
+  --EPI-heading-h9-BOLD-font-weight: 700;
+  --EPI-heading-h9-BOLD-font-size: 28px;
+  --EPI-heading-h9-BOLD-letter-spacing: 0px;
+  --EPI-heading-h9-BOLD-line-height: normal;
+  --EPI-heading-h9-BOLD-font-style: normal;
+  --EPI-heading-h10-BOLD-font-family: "Epilogue-Bold", Helvetica;
+  --EPI-heading-h10-BOLD-font-weight: 700;
+  --EPI-heading-h10-BOLD-font-size: 24px;
+  --EPI-heading-h10-BOLD-letter-spacing: 0px;
+  --EPI-heading-h10-BOLD-line-height: normal;
+  --EPI-heading-h10-BOLD-font-style: normal;
+  --ROS-body-b1-REG-font-family: "Rosario-Regular", Helvetica;
+  --ROS-body-b1-REG-font-weight: 400;
+  --ROS-body-b1-REG-font-size: 40px;
+  --ROS-body-b1-REG-letter-spacing: 0px;
+  --ROS-body-b1-REG-line-height: 135.0000023841858%;
+  --ROS-body-b1-REG-font-style: normal;
+  --ROS-body-b1-BOLD-font-family: "Rosario-Bold", Helvetica;
+  --ROS-body-b1-BOLD-font-weight: 700;
+  --ROS-body-b1-BOLD-font-size: 40px;
+  --ROS-body-b1-BOLD-letter-spacing: 0px;
+  --ROS-body-b1-BOLD-line-height: 135.0000023841858%;
+  --ROS-body-b1-BOLD-font-style: normal;
+  --ROS-body-b2-REG-font-family: "Rosario-Regular", Helvetica;
+  --ROS-body-b2-REG-font-weight: 400;
+  --ROS-body-b2-REG-font-size: 32px;
+  --ROS-body-b2-REG-letter-spacing: 0px;
+  --ROS-body-b2-REG-line-height: 135.0000023841858%;
+  --ROS-body-b2-REG-font-style: normal;
+  --ROS-body-b2-BOLD-font-family: "Rosario-Bold", Helvetica;
+  --ROS-body-b2-BOLD-font-weight: 700;
+  --ROS-body-b2-BOLD-font-size: 32px;
+  --ROS-body-b2-BOLD-letter-spacing: 0px;
+  --ROS-body-b2-BOLD-line-height: 135.0000023841858%;
+  --ROS-body-b2-BOLD-font-style: normal;
+  --ROS-body-b3-REG-font-family: "Rosario-Regular", Helvetica;
+  --ROS-body-b3-REG-font-weight: 400;
+  --ROS-body-b3-REG-font-size: 24px;
+  --ROS-body-b3-REG-letter-spacing: 0px;
+  --ROS-body-b3-REG-line-height: 135.0000023841858%;
+  --ROS-body-b3-REG-font-style: normal;
+  --ROS-body-b3-BOLD-font-family: "Rosario-Bold", Helvetica;
+  --ROS-body-b3-BOLD-font-weight: 700;
+  --ROS-body-b3-BOLD-font-size: 24px;
+  --ROS-body-b3-BOLD-letter-spacing: 0px;
+  --ROS-body-b3-BOLD-line-height: 135.0000023841858%;
+  --ROS-body-b3-BOLD-font-style: normal;
+  --ROS-body-b4-REG-font-family: "Rosario-Regular", Helvetica;
+  --ROS-body-b4-REG-font-weight: 400;
+  --ROS-body-b4-REG-font-size: 20px;
+  --ROS-body-b4-REG-letter-spacing: 0px;
+  --ROS-body-b4-REG-line-height: 135.0000023841858%;
+  --ROS-body-b4-REG-font-style: normal;
+  --ROS-body-b4-BOLD-font-family: "Rosario-Bold", Helvetica;
+  --ROS-body-b4-BOLD-font-weight: 700;
+  --ROS-body-b4-BOLD-font-size: 20px;
+  --ROS-body-b4-BOLD-letter-spacing: 0px;
+  --ROS-body-b4-BOLD-line-height: 135.0000023841858%;
+  --ROS-body-b4-BOLD-font-style: normal;
+  --ROS-body-b5-REG-font-family: "Rosario-Regular", Helvetica;
+  --ROS-body-b5-REG-font-weight: 400;
+  --ROS-body-b5-REG-font-size: 16px;
+  --ROS-body-b5-REG-letter-spacing: 0px;
+  --ROS-body-b5-REG-line-height: 135.0000023841858%;
+  --ROS-body-b5-REG-font-style: normal;
+  --ROS-body-b5-BOLD-font-family: "Rosario-Bold", Helvetica;
+  --ROS-body-b5-BOLD-font-weight: 700;
+  --ROS-body-b5-BOLD-font-size: 16px;
+  --ROS-body-b5-BOLD-letter-spacing: 0px;
+  --ROS-body-b5-BOLD-line-height: 135.0000023841858%;
+  --ROS-body-b5-BOLD-font-style: normal;
+  --ROS-body-b5-BOLD-links-font-family: "Rosario-Bold", Helvetica;
+  --ROS-body-b5-BOLD-links-font-weight: 700;
+  --ROS-body-b5-BOLD-links-font-size: 16px;
+  --ROS-body-b5-BOLD-links-letter-spacing: 0px;
+  --ROS-body-b5-BOLD-links-line-height: 135.0000023841858%;
+  --ROS-body-b5-BOLD-links-font-style: normal;
+  --ROS-body-b6-REG-font-family: "Rosario-Regular", Helvetica;
+  --ROS-body-b6-REG-font-weight: 400;
+  --ROS-body-b6-REG-font-size: 14px;
+  --ROS-body-b6-REG-letter-spacing: 0px;
+  --ROS-body-b6-REG-line-height: 135.0000023841858%;
+  --ROS-body-b6-REG-font-style: normal;
+  --ROS-body-b6-BOLD-font-family: "Rosario-Bold", Helvetica;
+  --ROS-body-b6-BOLD-font-weight: 700;
+  --ROS-body-b6-BOLD-font-size: 14px;
+  --ROS-body-b6-BOLD-letter-spacing: 0px;
+  --ROS-body-b6-BOLD-line-height: 135.0000023841858%;
+  --ROS-body-b6-BOLD-font-style: normal;
+  --ROS-body-b7-REG-font-family: "Rosario-Regular", Helvetica;
+  --ROS-body-b7-REG-font-weight: 400;
+  --ROS-body-b7-REG-font-size: 12px;
+  --ROS-body-b7-REG-letter-spacing: 0px;
+  --ROS-body-b7-REG-line-height: 135.0000023841858%;
+  --ROS-body-b7-REG-font-style: normal;
+  --ROS-body-b7-BOLD-font-family: "Rosario-Bold", Helvetica;
+  --ROS-body-b7-BOLD-font-weight: 700;
+  --ROS-body-b7-BOLD-font-size: 12px;
+  --ROS-body-b7-BOLD-letter-spacing: 0px;
+  --ROS-body-b7-BOLD-line-height: 135.0000023841858%;
+  --ROS-body-b7-BOLD-font-style: normal;
+  --button-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1),
+    8px 8px 0px 0px rgba(43, 58, 134, 1);
+  --mobile-button-shadow-PRIMARY: 4px 4px 0px 0px rgba(0, 0, 0, 1),
+    2px 2px 0px 0px rgba(43, 58, 134, 1);
+  --mobile-button-shadow-QUAT: 4px 4px 0px 0px rgba(0, 0, 0, 1),
+    2px 2px 0px 0px rgba(175, 145, 100, 1);
+  --collection-1-rectanglewidth: 1200px;
+}
+
+/*
+  
+  To enable a theme in your HTML, simply add one of the following data attributes to an HTML element, like so:
+  
+  <body data-collection-1-mode="desktop">
+      <!-- the rest of your content -->
+  </body>
+  
+  You can apply the theme on any DOM node, not just the `body`
+  
+  */
+
+[data-collection-1-mode="desktop"] {
+  --collection-1-rectanglewidth: 1200px;
+}
+
+[data-collection-1-mode="tablet"] {
+  --collection-1-rectanglewidth: 750px;
+}
+
+[data-collection-1-mode="mobile"] {
+  --collection-1-rectanglewidth: 300px;
+}
