@@ -32,6 +32,13 @@ h6 {
   text-transform: uppercase;
 }
 
+p {
+  -webkit-text-size-adjust: 16px;
+  -moz-text-size-adjust: 16px;
+  -ms-text-size-adjust: 16px;
+  text-size-adjust: 16px;
+}
+
 .bold-heading {
   font-family: "Epilogue", sans-serif;
   font-weight: 700;
@@ -47,9 +54,9 @@ img {
   width: 100%;
 }
 
-.body {
+body {
   padding: 0px;
-  margin: 0px;
+  margin: 16px;
   background-color: var(--background-color);
 }
 
@@ -269,11 +276,9 @@ h6 {
 
 .text-entry-container {
   max-width: 400px;
-  margin: 50px auto;
   padding: 20px;
-  background-color: #fff;
+
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 label {
@@ -297,6 +302,13 @@ input {
   align-items: center;
   gap: 40px;
   align-self: stretch;
+}
+
+.recent-news img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 300px;
+  width: 100%;
 }
 
 .recent-news h1,
@@ -372,7 +384,7 @@ input {
   align-self: stretch;
 }
 
-.membership ul {
+/* .membership ul {
   display: flex;
   padding: 16px 0px;
   align-items: center;
@@ -384,6 +396,41 @@ input {
   align-items: flex-start;
   gap: 8px;
   flex: 1 0 0;
+} */
+
+/* Style the buttons that are used to open and close the accordion panel */
+.membership-accordion {
+  color: var(--on-background-color);
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.membership-active,
+.membership-accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 34px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.panel h2 {
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+.panel p {
+  text-transform: none;
+  color: var(--on-background-color);
 }
 
 .join-newsletter {

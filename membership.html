@@ -43,17 +43,72 @@
         </div>
       </div>
 
-      <div class="membership-container">
-        <h1>Join our Active Membership</h1>
-        <div class="membership-list">
-          <ul>
-            <li>on-track</li>
-            <li>on-board</li>
-            <li>first class</li>
-            <li>club car</li>
-          </ul>
-        </div>
+      <button class="membership-accordion"><h2>on-track</h2></button>
+      <div class="panel">
+        <p>
+          Join our movement with the affordable On-Track membership, specially
+          designed for students, veterans, and those with disabilities. Your
+          support helps us lay the foundation for better public train
+          infrastructure. Your $25 per month ensures that we're on the right
+          track towards a more accessible and efficient transportation system
+          for everyone.
+        </p>
       </div>
+
+      <button class="membership-accordion"><h2>on-board</h2></button>
+      <div class="panel">
+        <p>
+          Become an On-Board member and enjoy a premium level of support for
+          just $35 per month. Your commitment keeps the momentum going, helping
+          us enhance train infrastructure, make it more sustainable, and boost
+          ridership. Ride with us and be part of the journey towards a greener
+          and more efficient future.
+        </p>
+      </div>
+
+      <button class="membership-accordion"><h2>first class</h2></button>
+      <div class="panel">
+        <p>
+          Upgrade your support to First Class and help us reach new destinations
+          in public train infrastructure. For $50 per month, you'll be at the
+          forefront of our mission, accelerating the growth of sustainable and
+          accessible transportation. With your generous contribution, we can
+          pave the way to a brighter future for train travel.
+        </p>
+      </div>
+
+      <button class="membership-accordion"><h2>club car</h2></button>
+      <div class="panel">
+        <p>
+          The Club Car membership is for those who want to be at the heart of
+          the transformation. At $100 per month, you are an essential driving
+          force behind our advocacy efforts. Your support enables us to
+          spearhead groundbreaking projects, pushing the boundaries of public
+          train infrastructure and usage. Join the Club Car level and be a
+          leader in the journey towards a better tomorrow.
+        </p>
+      </div>
+
+      <script>
+        var acc = document.getElementsByClassName("membership-accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function () {
+            /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+            this.classList.toggle("active");
+
+            /* Toggle between hiding and showing the active panel */
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+      </script>
 
       <!-- NEWSLETTER, AGAIN -->
       <div class="newsletter">
