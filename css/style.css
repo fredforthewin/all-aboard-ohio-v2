@@ -10,6 +10,7 @@
   --primary-color: rgba(43, 58, 134, 1);
   --secondary-color: rgba(138, 0, 0, 1);
   --tertiary-color: rgba(70, 151, 156, 1);
+  --quintenary-color: #c4d1ec;
   --quarternary-color: rgba(175, 145, 100, 1);
   --on-primary-color: rgba(247, 248, 252, 1);
   --button-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1),
@@ -71,9 +72,9 @@ body {
 .navigation {
   flex-direction: row;
   width: 100%;
-  justify-content: center;
+  justify-content: space-between;
   gap: 16px;
-  padding: 20px 0px 16px;
+  padding: 20px 16px 16px;
   position: fixed;
   top: 0;
   left: 0;
@@ -83,7 +84,6 @@ body {
   display: flex;
   align-items: center;
   color: var(--on-background-color);
-
   overflow: hidden;
 }
 
@@ -93,8 +93,11 @@ body {
 
 .navigation .menu-links {
   display: none;
-  flex-direction: row;
+  height: 100%;
+  flex-direction: column;
   text-transform: uppercase;
+  background-color: var(--secondary-color);
+  font-size: larger;
 }
 
 .navigation .menu-links div {
@@ -102,7 +105,7 @@ body {
 }
 
 .navigation .menu-links div:last-child {
-  margin-right: 0; /* Remove margin from the last link to avoid extra space */
+  margin-right: 0;
 }
 
 .navigation a:link {
@@ -126,10 +129,10 @@ body {
 
 .hero {
   display: flex;
-  padding: 150px 0px 0px;
+  padding: 60px 0px 0px;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+
   align-self: stretch;
   background-color: var(--background-color);
 }
@@ -178,7 +181,7 @@ h5,
 h6 {
   color: var(--PRIMARY, #2b3a86);
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 3px;
 }
 
 .hero .description {
@@ -195,16 +198,19 @@ h6 {
 /* CTA BUTTON */
 
 .cta-button {
-  background-color: var(--primary-color);
+  background-color: var(--quintenary-color);
   border: none;
-  color: var(--on-primary-color);
-  padding: 16px 32px;
+  color: var(--primary-color);
+  padding: 8px 16px;
   text-align: center;
-  text-decoration: none;
+  text-decoration: underline;
   display: inline-block;
   font-size: 16px;
-  width: 100%;
-  border-radius: 4px;
+  font-weight: bolder;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-self: center;
 }
 
 .content-gap {
