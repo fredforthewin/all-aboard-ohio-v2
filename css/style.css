@@ -21,6 +21,10 @@
     2px 2px 0px 0px rgba(175, 145, 100, 1);
 }
 
+img {
+  width: 100%;
+}
+
 /* Epilogue for headers */
 h1,
 h2,
@@ -33,6 +37,12 @@ h6 {
   text-transform: uppercase;
 }
 
+.bold-heading {
+  font-family: "Epilogue", sans-serif;
+  font-weight: 700;
+  color: var(--on-background-color);
+}
+
 p {
   -webkit-text-size-adjust: 16px;
   -moz-text-size-adjust: 16px;
@@ -40,22 +50,29 @@ p {
   text-size-adjust: 16px;
   font-family: "Rosario", sans-serif;
   color: var(--on-background-color);
+  line-height: 135%;
 }
 
-.bold-heading {
-  font-family: "Epilogue", sans-serif;
-  font-weight: 700;
-  color: var(--on-background-color);
+h1 {
+  font-size: 32px;
 }
 
-img {
-  width: 100%;
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 28px;
 }
 
 body {
   padding: 0px;
   margin: 16px;
   background-color: var(--background-color);
+}
+
+a[href^="mailto:"] {
+  color: var(--secondary-color);
 }
 
 .main {
@@ -94,10 +111,12 @@ body {
 .navigation .menu-links {
   display: none;
   height: 100%;
-  flex-direction: column;
+  flex-direction: row;
   text-transform: uppercase;
-  background-color: var(--secondary-color);
   font-size: larger;
+  /* position: absolute; */
+  /* top: 100px;
+  left: 0px; */
 }
 
 .navigation .menu-links div {
@@ -123,18 +142,19 @@ body {
 .hamburger-menu {
   display: none;
   cursor: pointer;
+  margin-right: 10px;
 }
 
 /* HERO */
 
 .hero {
   display: flex;
-  padding: 60px 0px 0px;
+  margin-top: 100px;
+  padding: 8px 8px;
   flex-direction: column;
   align-items: center;
-
   align-self: stretch;
-  background-color: var(--background-color);
+  border: 4px solid var(--on-background-color);
 }
 
 .hero-image-container {
@@ -159,6 +179,7 @@ body {
 .hero-content {
   display: flex;
   flex-direction: column;
+  gap: 8px;
 }
 
 .hero-content .column {
@@ -166,6 +187,9 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: left;
+  padding: 8px 8px;
+  
+  border: solid var(--on-background-color);
 }
 
 /* this to make the top of the first column have a border */
@@ -202,8 +226,11 @@ h6 {
   border: none;
   color: var(--primary-color);
   padding: 8px 16px;
+  margin: 10px 0px;
   text-align: center;
-  text-decoration: underline;
+  -webkit-text-decoration: underline var(--primary-color);
+  text-decoration: underline var(--primary-color);
+  text-transform: uppercase;
   display: inline-block;
   font-size: 16px;
   font-weight: bolder;
@@ -211,6 +238,12 @@ h6 {
   width: -moz-fit-content;
   width: fit-content;
   align-self: center;
+  border-radius: 4px;
+  border: 4px solid var(--on-background-color, #020123);
+  background: var(--background-color, #fafbfc);
+
+  /* ButtonShadow */
+  box-shadow: 4px 4px 0px 0px #2b3a86;
 }
 
 .content-gap {
@@ -236,6 +269,7 @@ h6 {
 .accomplishments h6 {
   text-transform: uppercase;
   color: var(--secondary-color, #8a0000);
+  align-self: flex-start;
 }
 
 .accomplishments img {
@@ -253,12 +287,19 @@ h6 {
 }
 
 /* JOIN NEWSLETTER TEXT ENTRY */
+.join-newsletter {
+  align-self: center;
+  align-items: center;
+}
+
 .join-newsletter .cta-button {
   background-color: var(--tertiary-color);
+  align-self: center;
 }
 
 .text-entry-container {
-  max-width: 400px;
+  width: auto;
+  max-width: 700px;
   padding: 20px;
 
   border-radius: 8px;
@@ -284,10 +325,7 @@ input {
 }
 
 .join-newsletter h2,
-.join-newsletter h3,
-.join-newsletter h4,
-.join-newsletter h5,
-.join-newsletter h6 {
+.join-newsletter h3 {
   color: var(--tertiary-color, #46979c);
 }
 
@@ -299,6 +337,12 @@ input {
   align-items: center;
   gap: 40px;
   align-self: stretch;
+}
+
+.recent-news h1,
+.recent-news h2,
+.recent-news h3 {
+  align-self: flex-start;
 }
 
 .recent-news img {
@@ -433,6 +477,8 @@ p.price {
   align-self: stretch;
   background-color: var(--primary-color, #2b3a86);
   color: var(--on-primary-color, #f7f8fc);
+  /* position: absolute;
+  z-index: 1; */
 }
 
 .footer p {
@@ -475,27 +521,14 @@ p.price {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  /* .body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    border-left: 1px solid black;
-    border-bottom: 1px solid black;
-    background: url("img/project1/aao_background1.png") repeat-y left top;
-  } */
-
-  .body {
+  body {
     display: flex;
     max-width: 762px;
     width: 100%;
-    padding: 167px auto 442px;
+    margin: 100px auto 442px auto;
     flex-direction: column;
-    align-items: center;
+    height: 100vh;
     gap: 80px;
-
-    background: var(--background-color, #fafbfc);
   }
 
   .img {
@@ -506,8 +539,8 @@ p.price {
   .navigation {
     display: flex;
     width: 100%;
-    padding: 32px 8px 16px 8px;
-    justify-content: center;
+    padding: 24px 8px 16px 8px;
+    justify-content: space-between;
     align-items: center;
     gap: 4px;
   }
@@ -527,14 +560,140 @@ p.price {
     align-items: center;
     align-self: stretch;
     border-radius: 4px;
-    background: var(--background-color, #fafbfc);
   }
 
-  .hero-content .column:last-child {
-    border-right: 1px solid black;
+  .hero-content {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 10px 0px, 10px;
   }
 
-  .hero-text {
+  .hero-content .column {
+    display: flex;
+    flex: 1 0 0;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    padding: 20px 10px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  .hero button ::after {
+    background-color: var(--secondary-color);
+  }
+
+  .cta-button {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .recent-news {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+  }
+
+  .news-card {
+    flex: 1 0 calc(50% - 8px);
+    padding: 0px 4px;
+  }
+  .recent-news img {
+    width: 300px;
+    max-width: 300px;
+    height: auto; /* Maintain aspect ratio */
+    max-height: 200px;
+    display: block; /* Remove extra space below images */
+    margin: 0 auto;
+  }
+
+  .recent-news a {
+    max-width: 300px;
+    text-align: left;
+    white-space: wrap;
+  }
+
+  a[href^="mailto:"] {
+    font-size: 20px;
+  }
+
+  .card-container ul {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    max-width: 1024px;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 24px;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 4px;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 10px 0px, 10px;
+  }
+
+  .hero-content .column {
+    display: flex;
+    flex: 1 0 0;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    padding: 20px 10px;
+  }
+
+  .card-container div {
+    font-size: 24px;
+    gap: 4px;
+  }
+
+  a[href^="mailto:"] {
+    font-size: 24px;
+  }
+}
+
+/* .hero-text {
     position: absolute;
     top: 80px;
     right: 0;
@@ -543,25 +702,14 @@ p.price {
       255,
       255,
       0.8
-    ); /* Use a semi-transparent background for better readability */
+    ); /* Use a semi-transparent background for better readability
     padding: 20px;
     text-align: left;
     vertical-align: middle;
-    color: var(--on-primary-color); /* Set the text color */
-  }
+    color: var(--on-primary-color); /* Set the text color
+  } */
 
-  /* I want this to make the second button the secondary color. it inherits primary-color from main. */
-  .hero button ::after {
-    background-color: var(--secondary-color);
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .body {
-    display: flex;
-    flex-direction: row;
-  }
-}
+/* I want this to make the second button the secondary color. it inherits primary-color from main. */
 
 /* .text-with-background-image {
   background-image: url("../img/project1/aao_home_hero.png");
